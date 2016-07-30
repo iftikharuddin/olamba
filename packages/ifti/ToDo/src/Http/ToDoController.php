@@ -2,8 +2,12 @@
 
 namespace ifti\ToDo\Http;
 use App\Http\Controllers\Controller;
-class ToDoController extends Controller {
+use ifti\ToDo\Todo;
+class ToDoController extends Controller 
+{
 	public function getUserToDoList(){
-		return 'thisismy todo list';
+		
+		$todos = Todo::orderBy('created_at')->get();
+		return view("todo::todo-list", compact('todos'));
 	}
 }
