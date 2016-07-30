@@ -1,0 +1,20 @@
+{
+    "name": "ifti/to-do",
+    "description": "A small Todo Package for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iftikhar uddin",
+            "email": "iftipro@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4":{
+			"ifti\\ToDo\\": "src/"
+		}	
+	},
+    "minimum-stability": "dev",
+    "require": {
+		"illuminate/support": "~5"
+	}
+}
